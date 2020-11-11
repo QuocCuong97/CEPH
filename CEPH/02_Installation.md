@@ -188,7 +188,7 @@
 - **B7 :** Khai báo thêm các tùy chọn cho việc triển khai, vận hành **Ceph** vào file `ceph.conf` này trước khi cài đặt các gói cần thiết cho ceph trên các node. Lưu ý các tham số về network. Ta sẽ dụng vlan `10.5.8.0/22` cho đường truy cập của các client (Hay gọi là `ceph public`). Vlan `10.10.230.0/24` cho đường replicate dữ liệu, các dữ liệu sẽ được sao chép & nhân bản qua vlan này.
     ```
     $ echo "public network = 10.5.8.0/22" >> ceph.conf
-    $ echo "cluster network = 10.10.230.0/24" >> ceph.conf
+    $ echo "cluster network = 172.16.69.0/24" >> ceph.conf
     $ echo "osd objectstore = bluestore"  >> ceph.conf
     $ echo "mon_allow_pool_delete = true"  >> ceph.conf
     $ echo "osd pool default size = 3"  >> ceph.conf

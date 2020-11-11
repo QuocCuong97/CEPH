@@ -20,4 +20,4 @@
     ```
     $ ceph -s
     ```
-### **
+    <img src=https://i.imgur.com/B9gW6gU.png>
